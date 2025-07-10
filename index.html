@@ -1,0 +1,40 @@
+import os
+
+mp3_folder = "./mp3s"  # Change to your local MP3 folder
+output_file = "index.html"
+
+mp3_files = [f for f in os.listdir(mp3_folder) if f.lower().endswith(".mp3")]
+mp3_files.sort()
+
+html_header = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My MP3 Library</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #f0f0f0; }
+    h1 { text-align: center; }
+    .track { margin-bottom: 20px; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    audio { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>🎵 My MP3 Library</h1>
+"""
+
+html_footer = """
+</body>
+</html>
+"""
+
+with open(output_file, "w", encoding="utf-8") as f:
+    f.write(html_header)
+    for mp3 in mp3_files:
+        title = os.path.splitext(mp3)[0].replace("_", " ").title()
+        f.write(f'<div class="track">\n')
+        f.write(f'  <h3>{title}</h3>\n')
+        f.write(f'  <audio controls src="mp3s/{mp3}"></audio>\n')
+        f.write(f'</div>\n\n')
+    f.write(html_footer)
+
+print(f"Generated {output_file} with {len(mp3_files)} tracks.")
