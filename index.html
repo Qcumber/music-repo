@@ -1,15 +1,7 @@
-import os
-
-mp3_folder = "./mp3s"  # Change to your local MP3 folder
-output_file = "index.html"
-
-mp3_files = [f for f in os.listdir(mp3_folder) if f.lower().endswith(".mp3")]
-mp3_files.sort()
-
-html_header = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>My MP3 Library</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 2rem; background: #f0f0f0; }
@@ -20,21 +12,251 @@ html_header = """<!DOCTYPE html>
 </head>
 <body>
   <h1>🎵 My MP3 Library</h1>
-"""
 
-html_footer = """
+  <div class="track">
+    <h3>20secJuice</h3>
+    <audio controls src="20secJuice.mp3"></audio>
+  </div>
+
+  <div class="track">
+    <h3>aaaaaaaaah</h3>
+    <audio controls src="aaaaaaaaah.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>aliens frenzing</h3>
+    <audio controls src="aliens frenzing.mp3"></audio>
+  </div>
+
+  <div class="track">
+    <h3>bip4bap</h3>
+    <audio controls src="bip4bap.mp3"></audio>
+  </div>
+  <div class="track">
+    <h3>birds</h3>
+    <audio controls src="birds.mp3"></audio>
+  </div>
+
+  <div class="track">
+    <h3>Track Two</h3>
+    <audio controls src="track-two.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>Blabber Man</h3>
+    <audio controls src="Blabber Man.mp3"></audio>
+  </div>
+
+  <div class="track">
+    <h3>blowBack</h3>
+    <audio controls src="blowBack.mp3"></audio>
+  </div> 
+  <div class="track">
+    <h3>bumpSong</h3>
+    <audio controls src="bumpSong.mp3"></audio>
+  </div>
+
+  <div class="track">
+    <h3>cactusJam</h3>
+    <audio controls src="cactusJam.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>carRaceSong</h3>
+    <audio controls src="carRaceSong.mp3"></audio>
+  </div>
+
+  <div class="cookAccordian">
+    <h3>cookAccordian</h3>
+    <audio controls src="cookAccordian.mp3"></audio>
+  </div>
+
+  <div class="track">
+    <h3>creepSchleet</h3>
+    <audio controls src="creepSchleet"></audio>
+  </div>
+    <div class="track">
+    <h3>darkGoth</h3>
+    <audio controls src="darkGoth.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>dirgler</h3>
+    <audio controls src="dirgler.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>EU Brexit</h3>
+    <audio controls src="EU Brexit.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>extra juice</h3>
+    <audio controls src="extra juice.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>filler track</h3>
+    <audio controls src="filler track.mp3"></audio>
+  </div>
+    <div class="track">
+    <h3>Flerm</h3>
+    <audio controls src="Flerm.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>FuguePlay</h3>
+    <audio controls src="FuguePlay.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>GenerElec</h3>
+    <audio controls src="GenerElec.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>god tier</h3>
+    <audio controls src="god tier.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>hurlch</h3>
+    <audio controls src="hurlch.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>ink crei z2</h3>
+    <audio controls src="ink crei z2.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>interlude1</h3>
+    <audio controls src="interlude1.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>introSongOfc</h3>
+    <audio controls src="introSongOfc.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>Iopdle</h3>
+    <audio controls src="Iopdle.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>iWouldTalkDemon</h3>
+    <audio controls src="iWouldTalkDemon.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>jazzBlar</h3>
+    <audio controls src="jazzBlar.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>mixed pretzage</h3>
+    <audio controls src="mixed pretzage.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>monsterFright</h3>
+    <audio controls src="monsterFright.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>musicBomb</h3>
+    <audio controls src="musicBomb.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>Flerm</h3>
+    <audio controls src="Flerm.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>Nasty chords</h3>
+    <audio controls src="Nasty chords.wav"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>piccoloBit</h3>
+    <audio controls src="piccoloBit.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>protoTechGoth</h3>
+    <audio controls src="protoTechGoth.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>Qwacc</h3>
+    <audio controls src="Qwacc.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>RugStore</h3>
+    <audio controls src="RugStore.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>seaSilk</h3>
+    <audio controls src="seaSilk.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>simplyFree</h3>
+    <audio controls src="simplyFree.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>soloPsist</h3>
+    <audio controls src="soloPsist.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>soundCall</h3>
+    <audio controls src="soundCall.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>standardized exam</h3>
+    <audio controls src="standardized exam.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>stric chent</h3>
+    <audio controls src="stric chent.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>synthTro</h3>
+    <audio controls src="synthTro.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>synthTro2</h3>
+    <audio controls src="synthTro2.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>synthTro3</h3>
+    <audio controls src="synthTro3.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>tecSchr</h3>
+    <audio controls src="tecSchr.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>Trash</h3>
+    <audio controls src="Trash.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>trazj</h3>
+    <audio controls src="trazj.mp3"></audio>
+  </div>
+  </div>
+    <div class="track">
+    <h3>We Failed</h3>
+    <audio controls src="We Failed.mp3"></audio>
+  </div>
+
+  <!-- Add more tracks below -->
 </body>
 </html>
-"""
-
-with open(output_file, "w", encoding="utf-8") as f:
-    f.write(html_header)
-    for mp3 in mp3_files:
-        title = os.path.splitext(mp3)[0].replace("_", " ").title()
-        f.write(f'<div class="track">\n')
-        f.write(f'  <h3>{title}</h3>\n')
-        f.write(f'  <audio controls src="mp3s/{mp3}"></audio>\n')
-        f.write(f'</div>\n\n')
-    f.write(html_footer)
-
-print(f"Generated {output_file} with {len(mp3_files)} tracks.")
